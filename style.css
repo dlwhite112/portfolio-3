@@ -16,7 +16,7 @@ body {
 }
 
 .landing-section {
-  background-image: url(/Assets/Background-img/Landing-bg.jpg);
+  background-image: url(Assets/Background-img/Landing-bg.jpg);
   width: 1440px;
   height: 1024px;
   display: flex;
@@ -65,7 +65,7 @@ button{
 }
 .about-me-section {
   margin-top: 15rem;
-  background-image: url(/Assets/Background-img/about-me-bg.jpg);
+  background-image: url(Assets/Background-img/about-me-bg.jpg);
   width: 1440px;
   height: 1024px;
   display: grid;
@@ -115,7 +115,7 @@ p {
 
 /* css for contact-page */
 .contact-section {
-  background-image: url(/Assets/Background-img/contact-bg.jpg);
+  background-image: url(Assets/Background-img/contact-bg.jpg);
   width: 1440px;
   height: 1024px;
   display: grid;
@@ -148,7 +148,7 @@ h3 a{
 
 .my-work-section {
   /* margin-top: 15rem; */
-  background-image: url(/Assets/Background-img/portfolio-bg.jpg);
+  background-image: url(Assets/Background-img/portfolio-bg.jpg);
   width: 1440px;
   height: 1024px;
   display: grid;
