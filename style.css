@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-bottom: 50px;
+  display: grid;
+  /* grid-template-columns: (6, 1fr); */
+  /* gap: 20px; */
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 1200px; */
+  flex-wrap: wrap;
+}
+
+.landing-section {
+  background-image: url(/Assets/Background-img/Landing-bg.jpg);
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  justify-self: center;
+}
+.contact-link,
+.logo-link,
+.nav-link{
+  padding: 5px;
+  transition: transform .3s;
+}
+/* .nav-link:hover{
+  transform: rotate3d(1, 2.0, 3.0, 10deg);
+  transition: transform .3s;
+} */
+
+.logo-container:hover .logo-link,
+.contact-container:hover .contact-link,
+.nav-container:hover .nav-link{
+  transform: rotate3d(1, 2.0, 3.0, -5deg);
+}
+
+
+nav {
+  margin: 0 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-banner {
+  /* Landing Banner */
+
+  position: relative;
+  width: 970px;
+  height: 438px;
+  left: 15rem;
+  top: 160px;
+}
+.rocket{
+  margin: 0;
+  transform: rotate(90deg);
+  width: 50px;
+}
+button{
+  padding: .5em;
+}
+.about-me-section {
+  margin-top: 15rem;
+  background-image: url(/Assets/Background-img/about-me-bg.jpg);
+  width: 1440px;
+  height: 1024px;
+  display: grid;
+  justify-self: center;
+  align-items: initial;
+}
+.working-stack-icons{
+    height: 100px;
+}
+.about-me-text {
+  position: relative;
+  width: 660px;
+  height: 50rem;
+  left: 655px;
+}
+p {
+  margin: 2rem;
+  width: 650px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 42px;
+  color: rgb(68, 68, 68);
+    padding:0 3rem;
+}
+.img-heading {
+  display: block;
+  margin: auto;
+}
+.about-me-links {
+  
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 4rem;
+}
+.about-me-btn{
+  transition: transform .3s;
+}
+.about-me-btn:hover{
+  
+  transform: scale(1.1);
+}
+
+
+/* css for contact-page */
+.contact-section {
+  background-image: url(/Assets/Background-img/contact-bg.jpg);
+  width: 1440px;
+  height: 1024px;
+  display: grid;
+  justify-self: center;
+  align-items: initial;
+}
+.contact-img-heading{
+  margin: 2.3rem;
+  padding-left: 2rem;
+}
+.contact-text{
+  position: relative;
+  width: 400px;
+  height: 50rem;
+  margin-top: 5rem;
+  left: 5rem;
+}
+.contact-me-body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: rgb(68, 68, 68);
+}
+h3 a{
+  color: rgb(131, 100, 42);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+/* css for portfolio-page */
+
+.my-work-section {
+  /* margin-top: 15rem; */
+  background-image: url(/Assets/Background-img/portfolio-bg.jpg);
+  width: 1440px;
+  height: 1024px;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+}
+.heading-container{
+  position: relative;
+  left: 5rem;
+  top: 0rem;
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  position: relative;
+  left: 15rem;
+  bottom: 2rem;
+  justify-content: center;
+}
+/* project cards */
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  color: rgb(82, 81, 81);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 380px;
+  height: 370px;
+  padding: 20px;
+  margin: 30px;
+}
+.card p{
+  margin: 0;
+  padding: 0;
+}
+h4{
+  font-size: 2rem;
+  margin: 0.08rem;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.08);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+@media (max-width: 460px) {
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav img{
+    border: 10px;
+  }
+  .about-me-text{
+    position: absolute;
+    left: 30rem;
+    top: 96rem;
+  }
+}
+
+@media (max-width: 760) {
+  
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dl.dev - Portfolio Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <div class="logo-link">
+          <a href="#about-me">
+            <img src="/Assets/dl_dev_icon.png" alt="dl.dev-logo"></a>
+        </div>
+      </div>
+      <div class="navbar-container">
+        <div class="nav-container">
+          <div class="nav-link">
+            <a href="/portfolio.html">
+              <img src="/Assets/We create.png" alt="portfolio-logo"
+            /></a>
+          </div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-link">
+            <a href="/contact.html">
+              <img src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/Contact%20ME.png" alt="contact-logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <section class="landing-section">
+        <div class="landing-banner">
+          <img src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/Landing%20Banner.png" alt="Landing-Banner" />
+          <div
+            class="scroll"
+            data-rateX="2"
+            data-rateY="0"
+            data-direction="horizontal"
+          >
+            <a href="/contact.html">
+              <img
+                class="rocket"
+                src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/rocket-gif.gif"
+                alt="rocket-gif"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <secttion class="about-me-section" id="about-me">
+        <div class="working-stack-icons"></div>
+        <div class="about-me-text">
+          <img
+            src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/Headings/about-me-heading.png"
+            alt="about-me-heading"
+            class="img-heading"
+          />
+          <p class="about-me-body">
+            “Hello World” never looked so good! Web Developer with a passion for
+            personal growth and creativity. I didn’t just change careers, I
+            began a journey on my path to change the world. Nothing is more
+            satisfying than watching a project transform from an idea into a
+            real-world product that makes an impact. <br />
+            Let’s create together.
+          </p>
+          <div class="about-me-links">
+            <a href="/portfolio.html">
+              <img class="about-me-btn" src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/buttons/portfolio-btn.png" alt="portfolio-btn"
+            /></a>
+            <a href="/contact.html">
+              <img class="about-me-btn" src="https://github.com/dlwhite112/Portfolio/blob/19d820d1c8020cfe1e04a4f6ebda882af3bdcc69/Assets/buttons/contact-btn.png" alt="contact-btn"
+            /></a>
+          </div>
+        </div>
+      </secttion>
+    </div>
+    <!-- minimalist paralax -->
+    <script>
+      window.addEventListener("scroll", function (e) {
+        const target = document.querySelectorAll(".scroll");
+
+        var i = 0,
+          length = target.length;
+        for (i; i < length; i++) {
+          var pos = window.pageYOffset * target[i].dataset.rate;
+
+          if (target[i].dataset.direction === "vertical") {
+            target[i].style.transform = `translate3d(0px,${pos}px, 0px)`;
+          } else {
+            var posX = window.pageYOffset * target[i].dataset.ratex;
+            var posY = window.pageYOffset * target[i].dataset.ratey;
+            target[i].style.transform = `translate3d(${posX}px,${posY}px, 0px)`;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
